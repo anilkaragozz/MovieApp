@@ -1,10 +1,10 @@
-import CircularProgress from "@mui/material/CircularProgress";
+import { Box, CircularProgress } from "@mui/material";
 
 function Loading() {
   return (
-    <div className="loading">
+    <Box className="loading">
       <CircularProgress />
-    </div>
+    </Box>
   );
 }
 
