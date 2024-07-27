@@ -11,6 +11,7 @@ export default function Paginations() {
       variant="outlined"
       color="primary"
       onChange={(e, page) => {
+        console.log(e);
         setPage(page.toString());
       }}
     />
