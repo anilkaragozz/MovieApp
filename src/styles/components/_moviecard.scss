@@ -1,0 +1,36 @@
+@import "../variables.scss";
+
+.movie-grid-container {
+  @include flexCenter();
+  flex-wrap: wrap;
+}
+
+.movie-grid-item {
+  .movie-card {
+    height: 40rem;
+    padding: 1rem;
+    margin: 1rem;
+    @include flexCenter();
+    flex-direction: column;
+
+    .movie-card-media {
+      height: fit-content;
+      width: fit-content;
+    }
+
+    .movie-card-content {
+      .title {
+        margin-bottom: 8px;
+      }
+
+      .text {
+        color: rgba(0, 0, 0, 0.54);
+      }
+    }
+  }
+}
+
+.error-message {
+  @include flexCenter();
+  color: $red;
+}

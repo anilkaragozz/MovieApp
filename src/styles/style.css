@@ -1,0 +1,130 @@
+#root {
+  width: 100%;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 100vh;
+  min-height: 100vh;
+}
+
+.movie-grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.movie-grid-item .movie-card {
+  height: 40rem;
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.movie-grid-item .movie-card .movie-card-media {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.movie-grid-item .movie-card .movie-card-content .title {
+  margin-bottom: 8px;
+}
+.movie-grid-item .movie-card .movie-card-content .text {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f44336;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+@media (max-width: 768px) {
+  .pagination {
+    margin: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .pagination {
+    margin: 1rem;
+  }
+}
+
+.box {
+  flex-grow: 1;
+  padding-bottom: 5rem;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+@media (min-width: 600px) {
+  .toolbar {
+    padding: 0 24px;
+  }
+}
+
+.logo {
+  width: 12rem;
+  height: 4rem;
+  padding: 0.5rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0 1rem;
+}
+
+li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem;
+}/*# sourceMappingURL=style.css.map */

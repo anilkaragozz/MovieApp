@@ -1,0 +1,14 @@
+$white: #fff;
+$red: #f44336;
+
+@mixin flexBtw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

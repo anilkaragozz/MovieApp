@@ -1,0 +1,36 @@
+@import "../variables.scss";
+
+.box {
+  flex-grow: 1;
+  padding-bottom: 5rem;
+}
+.toolbar {
+  @include flexBtw();
+
+  padding: 0 16px;
+  @media (min-width: 600px) {
+    padding: 0 24px;
+  }
+}
+
+.logo {
+  width: 12rem;
+  height: 4rem;
+  padding: 0.5rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  padding: 0 1rem;
+}
+li a {
+  color: $white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
