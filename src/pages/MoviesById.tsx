@@ -1,10 +1,12 @@
-import { Button } from "@mui/material";
+import MovieDetail from "@/components/MovieDetail";
+import Header from "@/components/Header";
 
 function MoviesById() {
   return (
-    <Button variant="contained" color="primary">
-      hı
-    </Button>
+    <>
+      <Header />
+      <MovieDetail />
+    </>
   );
 }
 
