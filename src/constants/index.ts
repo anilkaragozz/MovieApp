@@ -28,5 +28,5 @@ export const MovieSchema = z.object({
 });
 export type Movie = z.infer<typeof MovieSchema>;
 
-export const baseURL = `http://www.omdbapi.com`;
+export const baseURL = `https://www.omdbapi.com`;
 export const apikey = import.meta.env.VITE_OMDB_API_KEY;
