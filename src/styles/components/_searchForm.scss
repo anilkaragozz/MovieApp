@@ -1,8 +1,37 @@
-.search-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin: 2rem;
-}
+@import "../variables.scss";
 
+.search-form {
+  @include flexCenter();
+
+  width: 50rem;
+  margin: auto;
+  padding: 8px;
+  border-radius: 4px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+
+  .search-input {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+
+    @media (max-width: 600px) {
+      margin-bottom: 8px;
+    }
+  }
+
+  .search-button {
+    color: $gray;
+
+    @media (max-width: 600px) {
+      align-self: flex-end;
+    }
+    @media (max-width: 778px) {
+      max-width: 12rem;
+    }
+  }
+}
